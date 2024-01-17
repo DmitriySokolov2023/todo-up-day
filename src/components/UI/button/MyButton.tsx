@@ -1,11 +1,18 @@
-import React from 'react';
-import classes from "./MyButton.module.css";
+import React, {Dispatch, FC, SetStateAction} from 'react';
 
-const MyButton = () => {
+interface ButtonProps{
+    onClick?:React.MouseEventHandler<HTMLButtonElement>
+    children:React.ReactNode
+    type:string
+}
+const MyButton:FC<ButtonProps> = ({onClick, children, type}) => {
     return (
-        <div className={classes.btn}>
-            
-        </div>
+        <button
+            className={`uppercase p-1 rounded w-6 ml-1 ${type==='add' ? 'bg-slate-200' : 'bg-red-500'}`}
+            onClick={onClick}
+        >
+            {children}
+        </button>
     );
 };
 
