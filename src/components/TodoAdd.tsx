@@ -18,17 +18,17 @@ const TodoAdd:FC<TodoAddProps> = ({todos, setTodo}) => {
         setTodo([...todos, todo])
     }
     return (
-        <div className='flex mt-2'>
-            <MyInput
-                value={value}
-                onChange={setValue}
-                placeholder='Введите задачу'
-            />
-            <MyButton
-                onClick={addTodo}
-                type='add'
-            >+</MyButton>
-        </div>
+            <div className='flex mt-2'>
+                <MyInput
+                    value={value}
+                    onChange={setValue}
+                    placeholder='Введите задачу'
+                />
+                <MyButton
+                    className='bg-slate-200 hover:bg-green-400'
+                    onClick={addTodo}
+                >+</MyButton>
+            </div>
     );
 };
 

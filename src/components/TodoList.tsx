@@ -20,9 +20,9 @@ const TodoList:FC<TodoListProps> = ({items, setTodo}:TodoListProps) => {
 
     return (
         <div>
-            <div className='flex'>
+            <div className='flex items-center'>
                 <h1 className='text-3xl my-2'>Задачи на сегодня</h1>
-                <MyButton type='add'>+</MyButton>
+                <MyButton className='bg-slate-200 h-10 hover:bg-green-400'>+</MyButton>
             </div>
 
             {

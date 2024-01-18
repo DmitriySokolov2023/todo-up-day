@@ -24,8 +24,8 @@ const TodoItem:FC<TodoItemProps> = ({todo, removeTodo, statusExchange, index}:To
                     <div className='text-xl uppercase'>{todo.complete ? 'Сделал':'Делаю'}</div>
                 </div>
                 <MyButton
-                    type='del'
                     onClick={()=>removeTodo(todo.id)}
+                    className='bg-red-500 '
                 >-</MyButton>
             </div>
 
