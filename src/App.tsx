@@ -13,12 +13,14 @@ function App() {
         {id:3, title:'Отправить на почту преподавателям задания', complete:false},
     ])
 
+
+
     return (
         <div className='w-full flex justify-center'>
-            <div className='w-2/3 font-light  mt-2'>
-                <h1 className='text-2xl'>Новая задача</h1>
+            <div className='w-2/3 font-light  mt-2 text-2xl'>
+                <h1 className='text-3xl'>Новая задача</h1>
                 <TodoAdd todos={todos} setTodo={setTodo}/>
-                <TodoList items={todos}/>
+                <TodoList items={todos} setTodo={setTodo}/>
             </div>
 
         </div>
