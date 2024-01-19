@@ -16,6 +16,7 @@ const TodoAdd:FC<TodoAddProps> = ({todos, setTodo}) => {
             complete:false
         }
         setTodo([...todos, todo])
+        setValue('')
     }
     return (
             <div className='flex mt-2'>

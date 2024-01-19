@@ -4,4 +4,7 @@ interface ModalContextProps{
     modalVisible:boolean
     setModalVisible:Dispatch<SetStateAction<boolean>>
 }
-// export const ModalContext = createContext<ModalContextProps>()
+export const ModalContext = createContext<ModalContextProps>({
+    modalVisible:false,
+    setModalVisible:()=>false
+})

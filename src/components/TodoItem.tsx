@@ -10,8 +10,6 @@ interface TodoItemProps{
 }
 
 const TodoItem:FC<TodoItemProps> = ({todo, removeTodo, statusExchange, index}:TodoItemProps) => {
-    const [status, setStatus] = useState('bg-slate-200')
-
 
     return (
         <div>
